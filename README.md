@@ -1,8 +1,8 @@
-# HunterEmailTool
+# HunterTool
 
 ## Table of Contents
 1. [Overview](#overview)  
-2. [Key Features](#key-features)  
+2. [Features](#features)  
 3. [Prerequisites](#prerequisites)  
 4. [Installation & Setup](#installation--setup)  
 5. [How to Run Locally](#how-to-run-locally)  
@@ -30,7 +30,7 @@ Sign up for a free account (100 queries per month) at Hunter.io. (Note: you cann
 
 ---
 
-## Key Features
+## Features
 
 **Domain Search**  
 - Given a domain (e.g. `tesla.com`) discovers potential email addresses, or organizational info.
@@ -58,4 +58,31 @@ Sign up for a free account (100 queries per month) at Hunter.io. (Note: you cann
   ```bash
   pip install requests pandas
 
-  
+  ```
+
+## Installation & Setup
+
+Clone or Download this repository.
+Install dependencies:
+```bash
+pip install requests pandas
+
+```
+Set your API key as an environment variable:
+```bash
+# On macOS/Linux
+export HUNTER_API_KEY="YOUR_API_KEY"
+
+# On Windows
+set HUNTER_API_KEY=YOUR_API_KEY
+
+```
+Run the script:
+```bash
+python huntertool.py
+
+```
+
+---
+
+
