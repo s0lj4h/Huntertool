@@ -5,12 +5,10 @@
 2. [Features](#features)  
 3. [Prerequisites](#prerequisites)  
 4. [Installation & Setup](#installation--setup)  
-5. [How to Run Locally](#how-to-run-locally)  
-6. [Usage Guide](#usage-guide)  
+5. [Usage](#usage)  
    - [Command-Line Menu](#command-line-menu)  
    - [Batch Processing](#batch-processing)  
-7. [Vulnerabilities](#vulnerabilities)  
-8. [Code Structure Overview](#code-structure-overview)
+ 
 
 ---
 
@@ -62,13 +60,15 @@ Sign up for a free account (100 queries per month) at Hunter.io. (Note: you cann
 
 ## Installation & Setup
 
-Clone or Download this repository.
-Install dependencies:
+1. Clone or Download this repository.    
+2. Install dependencies:    
 ```bash
 pip install requests pandas
 
 ```
-Set your API key as an environment variable:
+Register to Hunter.io using a buisness email.    
+Copy your API key from https://hunter.io/api-keys  
+Set your API key as an environment variable:  
 ```bash
 # On macOS/Linux
 export HUNTER_API_KEY="YOUR_API_KEY"
@@ -80,7 +80,6 @@ set HUNTER_API_KEY=YOUR_API_KEY
 Run the script:
 ```bash
 python huntertool.py
-
 ```
 
 ---
