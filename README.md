@@ -6,9 +6,7 @@
 3. [Prerequisites](#prerequisites)  
 4. [Installation & Setup](#installation--setup)  
 5. [Usage](#usage)  
-   - [Command-Line Menu](#command-line-menu)  
-   - [Batch Processing](#batch-processing)  
- 
+  
 
 ---
 
@@ -22,9 +20,10 @@ It can:
 - **Verify** if an email address is valid or deliverable.  
 - Process lists of emails or domains in **batch mode**, optionally with concurrency to speed up large jobs.
 
-It relies on a **Hunter.io** API key (which you must provide) and performs HTTP calls to Hunter.io endpoints. You can either do single lookups (interactive prompts) or run bulk operations from a file.
+Relies on a **Hunter.io** API key (which the user must provide) and performs HTTP calls to Hunter.io endpoints. You can either do single lookups (interactive prompts) or run bulk operations from a file.
 
-Sign up for a free account (100 queries per month) at Hunter.io. (Note: you cannot register with a free email account) copy your API key from https://hunter.io/api-keys
+1. Sign up for an account at Hunter.io. (Note: you cannot register with a free email account)
+2. Copy your API key from https://hunter.io/api-keys
 
 ---
 
@@ -34,16 +33,16 @@ Sign up for a free account (100 queries per month) at Hunter.io. (Note: you cann
 - Given a domain (e.g. `tesla.com`) discovers potential email addresses, or organizational info.
 
 **Email Finder**  
-- Provide a domain and name (full or first/last), and attempt to find a matching email address.
+- Provide a domain and name (first/last), and attempt to find a matching email address.
 
 **Email Verification**  
-- Check if an email is deliverable, disposable, or belongs to a catch-all domain.
+- Checks if an email is deliverable, disposable, or belongs to a catch-all domain.
 
 **Batch Processing**  
-- Read a list of emails or domains from a file, optionally use concurrency (multi-threading), and export results to CSV or JSON.
+- Load a list of emails or domains from a file, results are exported to CSV or JSON.
 
 **Logging & Saving to .txt**  
-- Prints output (info/errors) to the console.
+- Output (info/errors) is printed to the console.
 - Results can be saved to a `.txt` file.
 
 ---
